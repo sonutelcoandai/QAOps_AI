@@ -1,0 +1,11 @@
+features:
+
+  mcp: true
+
+  self_healing: false
+
+  telecom_testing: true
+
+  analytics: true
+
+  marketplace: false

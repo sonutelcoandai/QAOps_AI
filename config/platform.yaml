@@ -1,0 +1,19 @@
+platform:
+
+  name: QAOps-AI
+
+  version: 0.1.0
+
+  environment: development
+
+  debug: true
+
+defaults:
+
+  ai_provider: ollama
+
+  model: qwen3
+
+  memory_provider: chroma
+
+  agent_framework: langgraph

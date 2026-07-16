@@ -1,0 +1,26 @@
+routing_strategy: hybrid
+
+tasks:
+
+  test_case_generation:
+    model: qwen3
+
+  telecom_analysis:
+    model: qwen3
+
+  automation_generation:
+    model: deepseek-coder
+
+  playwright_generation:
+    model: deepseek-coder
+
+  architecture_review:
+    model: claude
+
+fallback:
+
+  first: configured_fallback
+
+  second: ollama
+
+  final: qwen3

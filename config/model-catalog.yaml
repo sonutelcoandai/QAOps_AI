@@ -1,0 +1,39 @@
+models:
+
+  qwen3:
+
+    provider: ollama
+
+    strengths:
+
+      - test_case_generation
+
+      - telecom_analysis
+
+      - api_testing
+
+  deepseek-coder:
+
+    provider: ollama
+
+    strengths:
+
+      - coding
+
+      - playwright
+
+      - selenium
+
+      - automation
+
+  claude:
+
+    provider: claude
+
+    strengths:
+
+      - architecture
+
+      - governance
+
+      - reporting
