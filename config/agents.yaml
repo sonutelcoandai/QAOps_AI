@@ -1,0 +1,13 @@
+agents:
+
+  qa_engineer:
+
+    enabled: true
+
+  senior_qa_engineer:
+
+    enabled: true
+
+  test_architect:
+
+    enabled: true
