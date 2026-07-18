@@ -1,0 +1,20 @@
+memory:
+
+  default_provider: chroma
+
+  providers:
+
+    chroma:
+      enabled: true
+
+    qdrant:
+      enabled: false
+
+    pinecone:
+      enabled: false
+
+    redis:
+      enabled: false
+
+    postgres:
+      enabled: false
