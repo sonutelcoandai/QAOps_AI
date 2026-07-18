@@ -1,4 +1,4 @@
-routing_strategy: hybrid
+routing_strategy: task_based
 
 tasks:
 
@@ -6,6 +6,9 @@ tasks:
     model: qwen3
 
   telecom_analysis:
+    model: qwen3
+
+  api_testing:
     model: qwen3
 
   automation_generation:
@@ -17,10 +20,27 @@ tasks:
   architecture_review:
     model: claude
 
+agents:
+
+  qa_engineer:
+    model: qwen3
+
+  automation_engineer:
+    model: deepseek-coder
+
+  test_architect:
+    model: claude
+
+domains:
+
+  telecom:
+    model: qwen3
+
+  banking:
+    model: claude
+
 fallback:
 
-  first: configured_fallback
+  provider: ollama
 
-  second: ollama
-
-  final: qwen3
+  model: qwen3
