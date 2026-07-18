@@ -6,10 +6,8 @@ models:
 
     strengths:
 
-      - test_case_generation
-
       - telecom_analysis
-
+      - test_case_generation
       - api_testing
 
   deepseek-coder:
@@ -19,12 +17,8 @@ models:
     strengths:
 
       - coding
-
-      - playwright
-
-      - selenium
-
-      - automation
+      - playwright_generation
+      - automation_generation
 
   claude:
 
@@ -32,8 +26,6 @@ models:
 
     strengths:
 
-      - architecture
-
+      - architecture_review
       - governance
-
       - reporting
