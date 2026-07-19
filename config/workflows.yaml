@@ -1,0 +1,72 @@
+workflows:
+
+  requirement_to_test:
+
+    status: active
+
+    version: "1.0"
+
+    owner: "QAOps-AI"
+
+    category: "quality-engineering"
+
+    complexity: medium
+
+    estimated_agents: 3
+
+    supported_domains:
+
+      - telecom
+
+      - api
+
+      - testing
+
+    description: >
+      Requirement to Test workflow.
+
+  api_validation:
+
+    status: draft
+
+    version: "1.0"
+
+    owner: "QAOps-AI"
+
+    category: "api-testing"
+
+    complexity: medium
+
+    estimated_agents: 2
+
+    supported_domains:
+
+      - api
+
+      - testing
+
+    description: >
+      API Validation workflow.
+
+  telecom_validation:
+
+    status: draft
+
+    version: "1.0"
+
+    owner: "QAOps-AI"
+
+    category: "telecom"
+
+    complexity: high
+
+    estimated_agents: 4
+
+    supported_domains:
+
+      - telecom
+
+      - protocols
+
+    description: >
+      Telecom Validation workflow.
