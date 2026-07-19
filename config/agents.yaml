@@ -11,3 +11,17 @@ agents:
   test_architect:
 
     enabled: true
+
+framework:
+
+  default: langgraph
+
+  available:
+
+    langgraph: true
+
+    crewai: false
+
+    autogen: false
+
+    ms_agent_framework: false

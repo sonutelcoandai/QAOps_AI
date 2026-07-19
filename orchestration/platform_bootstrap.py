@@ -5,6 +5,17 @@ from orchestration.provider_manager import ProviderManager
 from feature_flags.feature_manager import FeatureManager
 
 from ai_providers.load_providers import load_providers
+from orchestration.agent_bootstrap import AgentBootstrap
+
+from orchestration.framework_bootstrap import FrameworkBootstrap
+
+from orchestration.knowledge_bootstrap import KnowledgeBootstrap
+
+from model_orchestration.registry.model_registry import ModelRegistry
+
+from model_orchestration.policies.routing_policy import RoutingPolicy
+
+from model_orchestration.fallback.fallback_manager import FallbackManager
 
 
 class PlatformBootstrap:
@@ -15,18 +26,22 @@ class PlatformBootstrap:
 
         ConfigManager.initialize()
 
-        print("✓ Config Manager Loaded")
-
         FeatureManager.load()
-
-        print("✓ Feature Manager Loaded")
 
         ProviderManager.load()
 
-        print("✓ Provider Manager Loaded")
-
         load_providers()
 
-        print("✓ Providers Loaded")
+        ModelRegistry.load()
+
+        RoutingPolicy.load()
+
+        FallbackManager.load()
+
+        KnowledgeBootstrap.initialize()
+
+        FrameworkBootstrap.initialize()
+
+        AgentBootstrap.initialize()
 
         print("\nQAOps-AI Ready\n")
