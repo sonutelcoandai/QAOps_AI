@@ -27,7 +27,7 @@ workflows:
 
   api_validation:
 
-    status: draft
+    status: active
 
     version: "1.0"
 
@@ -42,8 +42,7 @@ workflows:
     supported_domains:
 
       - api
-
-      - testing
+      - telecom
 
     description: >
       API Validation workflow.
