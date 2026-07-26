@@ -11,6 +11,7 @@ from workflows.billing_validation.billing_validation_workflow import (
     BillingValidationWorkflow,
 )
 from workflows.oss_validation.oss_validation_workflow import OSSValidationWorkflow
+from workflows.api_validation.api_validation_workflow import APIValidationWorkflow
 
 
 def load_workflows():
@@ -21,6 +22,9 @@ def load_workflows():
     WorkflowRegistry.register("billing_validation", BillingValidationWorkflow())
     WorkflowRegistry.register("oss_validation", OSSValidationWorkflow())
 
+    WorkflowRegistry.register("api_validation", APIValidationWorkflow())
+
+    print("Workflow Loaded: api_validation")
     print("Workflow Loaded: oss_validation")
 
     print("Workflow Loaded: billing_validation")

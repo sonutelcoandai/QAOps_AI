@@ -53,3 +53,14 @@ def load_blueprints():
     )
 
     print("Blueprint Loaded: oss_validation")
+
+    BlueprintRegistry.register(
+        "api_validation",
+        WorkflowBlueprint(
+            name="api_validation",
+            description="API Validation Workflow",
+            agents=["tmforum_agent"],
+        ),
+    )
+
+    print("Blueprint Loaded: api_validation")
