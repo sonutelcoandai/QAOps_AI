@@ -17,6 +17,7 @@ from model_orchestration.policies.routing_policy import RoutingPolicy
 
 from model_orchestration.fallback.fallback_manager import FallbackManager
 from orchestration.workflow_bootstrap import WorkflowBootstrap
+from orchestration.mcp_bootstrap import MCPBootstrap
 
 
 class PlatformBootstrap:
@@ -44,6 +45,9 @@ class PlatformBootstrap:
         FrameworkBootstrap.initialize()
 
         AgentBootstrap.initialize()
+
         WorkflowBootstrap.initialize()
+
+        MCPBootstrap.initialize()
 
         print("\nQAOps-AI Ready\n")
