@@ -11,6 +11,25 @@ agents:
   test_architect:
 
     enabled: true
+  
+  tmforum_agent:
+
+    enabled: true
+  
+  billing_agent:
+  
+    enabled: true
+
+  oss_agent:
+  
+    enabled: true
+
+  bss_agent:
+  
+    enabled: true
+    
+  telecom_architect_agent:
+    enabled: true
 
 framework:
 

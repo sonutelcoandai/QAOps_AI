@@ -50,7 +50,7 @@ workflows:
 
   telecom_validation:
 
-    status: draft
+    status: active
 
     version: "1.0"
 
@@ -67,6 +67,50 @@ workflows:
       - telecom
 
       - protocols
+      - tmform
 
     description: >
       Telecom Validation workflow.
+
+  billing_validation:
+
+    status: active
+
+    version: "1.0"
+
+    owner: "QAOps-AI"
+
+    category: "telecom"
+
+    complexity: high
+
+    estimated_agents: 2
+
+    supported_domains:
+
+      - billing
+      - telecom
+
+    description: >
+      Billing Validation workflow.
+  oss_validation:
+
+    status: active
+
+    version: "1.0"
+
+    owner: "QAOps-AI"
+
+    category: "telecom"
+
+    complexity: high
+
+    estimated_agents: 2
+
+    supported_domains:
+
+      - oss
+      - telecom
+
+    description: >
+      OSS Validation workflow.
