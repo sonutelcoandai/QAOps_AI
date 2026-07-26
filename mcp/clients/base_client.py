@@ -2,7 +2,7 @@ from abc import ABC
 from abc import abstractmethod
 
 
-class BaseMCP(ABC):
+class BaseClient(ABC):
     @abstractmethod
     def connect(self):
         pass

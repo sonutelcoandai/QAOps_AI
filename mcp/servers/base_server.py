@@ -2,11 +2,7 @@ from abc import ABC
 from abc import abstractmethod
 
 
-class BaseMCP(ABC):
-    @abstractmethod
-    def connect(self):
-        pass
-
+class BaseServer(ABC):
     @abstractmethod
     def execute(self, request):
         pass
