@@ -1,0 +1,3 @@
+from evaluation.platform_evaluation_service import PlatformEvaluationService
+
+print(PlatformEvaluationService.evaluate_platform())
