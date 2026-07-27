@@ -1,0 +1,3 @@
+from governance_analytics.governance_portfolio_service import GovernancePortfolioService
+
+print(GovernancePortfolioService.generate())
