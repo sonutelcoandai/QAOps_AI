@@ -1,0 +1,3 @@
+from security.security_hardening_dashboard import SecurityHardeningDashboard
+
+print(SecurityHardeningDashboard.generate())
