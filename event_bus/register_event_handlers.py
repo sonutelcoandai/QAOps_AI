@@ -9,7 +9,7 @@ from event_bus.handlers.metrics_event_handler import MetricsEventHandler
 from governance_analytics.event_analytics_handler import EventAnalyticsHandler
 from observability.event_telemetry_handler import EventTelemetryHandler
 from cost_management.cost_event_handler import CostEventHandler
-
+from security.security_event_handler import SecurityEventHandler
 
 EVENTS = [
     "workflow_started",
@@ -34,3 +34,4 @@ def register_handlers():
         EventSubscriber.subscribe(event_name, EventAnalyticsHandler.handle)
         EventSubscriber.subscribe(event_name, EventTelemetryHandler.handle)
         EventSubscriber.subscribe(event_name, CostEventHandler.handle)
+        EventSubscriber.subscribe(event_name, SecurityEventHandler.handle)
