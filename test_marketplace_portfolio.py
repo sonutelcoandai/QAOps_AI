@@ -1,0 +1,3 @@
+from marketplace.marketplace_portfolio_service import MarketplacePortfolioService
+
+print(MarketplacePortfolioService.generate())
