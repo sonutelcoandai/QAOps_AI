@@ -1,0 +1,5 @@
+from ui_command_center.command_center_dashboard import CommandCenterDashboard
+
+CommandCenterDashboard.register_default_dashboards()
+
+print(CommandCenterDashboard.get_dashboards())
