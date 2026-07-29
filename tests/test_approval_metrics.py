@@ -1,3 +1,0 @@
-from human_in_loop.approval_metrics_service import ApprovalMetricsService
-
-print(ApprovalMetricsService.get_summary())

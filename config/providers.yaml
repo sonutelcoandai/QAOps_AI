@@ -6,6 +6,7 @@ providers:
     enabled: true
     host: http://localhost:11434
     default_model: qwen3
+    timeout: 120
 
   openai:
     enabled: false

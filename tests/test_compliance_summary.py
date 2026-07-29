@@ -1,3 +1,0 @@
-from governance_analytics.compliance_summary_service import ComplianceSummaryService
-
-print(ComplianceSummaryService.summarize())

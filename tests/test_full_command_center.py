@@ -1,3 +1,0 @@
-from ui_command_center.command_center_dashboard import CommandCenterDashboard
-
-print(CommandCenterDashboard.generate())

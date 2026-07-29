@@ -1,3 +1,0 @@
-from governance_analytics.governance_reporting_service import GovernanceReportingService
-
-print(GovernanceReportingService.generate("telecom_validation"))
